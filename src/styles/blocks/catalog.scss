@@ -4,10 +4,13 @@
   align-items: center;
 
   &__box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    justify-content: center;
+    gap: 0 48px;
+    grid-template-columns: repeat(auto-fill, $card-width);
+
     max-width: $max-box-width;
+    min-width: $card-width;
     margin-top: 50px;
     padding-bottom: 28px;
   }
