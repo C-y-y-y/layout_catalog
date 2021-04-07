@@ -11,19 +11,26 @@
 
   &--position {
     margin-bottom: 50px;
-    padding: 20px 14px 14px;
+    padding: 14px;
   }
 
   &__picture {
     width: $picture-width;
     height: 134px;
-    margin: 9px auto 45px;
+    margin: 15px auto 45px;
     transition-duration: $transit-time;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    transition-property: transform;
   }
 
   &__picture:hover {
+    box-sizing: content-box;
+    padding: 12px 0;
+    margin: 0 auto 30px;
     transform: scale(1.2);
-    border: 3px solid #f3f3f3;
+    border-color: #f3f3f3;
+    
   }
   
   &__text {
