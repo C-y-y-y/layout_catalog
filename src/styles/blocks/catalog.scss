@@ -7,10 +7,8 @@
     display: grid;
     justify-content: center;
     gap: 50px 48px;
-    grid-template-columns: repeat(auto-fill, $card-width);
-
+    grid-template-columns: repeat(auto-fill, minmax($card-width, 1fr));
     max-width: $max-box-width;
-    min-width: $card-width;
     margin-top: 50px;
   }
 }
